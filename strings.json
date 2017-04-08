@@ -1,0 +1,60 @@
+{
+    "page" : {
+        "title" : "Lloyd V. Balce | Software Developer | Taguig, Philippines",
+        "keywords" : "lloyd, balce, developer, taguig, resume, github",
+        "description" : "My online resume as a GitHub page. I'm a software developer based in Taguig, Philippines. Check out my codes at https:/github.com/lloydvbalce/"
+    },
+    "intro" : {
+        "name" : "Lloyd V. Balce",
+        "title" : "Software Developer",
+        "summary" : "Hi! I'm a software developer living in Taguig, Philippines. I develop desktop, web, and mobile apps and is looking forward to working on open-source projects soon.
+
+        Are you looking for a developer? or do you need help in a project? I'm a fresh graduate looking for a company to have my first job (here in Metro Manila). I work on freelance projects, team or solo, and help IT students in their theses. So if you have any question or is interested in working with me, please send me an email. I'd love to hear about it."
+    },
+    "experience" : {
+        "heading" : "Work Experience",
+        "list" : [
+            {
+                "title" : "OJT Web Developer",
+                "company" : "Web Outsourcing Gateway, Inc.",
+                "location" : "Pasig City, NCR, Philippines",
+                "startDate" : "January 2017",
+                "endDate" : "April 2017"
+            }
+        ],
+    },
+    "education" : {
+        "heading" : "Education",
+        "list" : [
+            {
+                "school" : "STI College Southwoods",
+                "degree" : "B.S.",
+                "fieldOfStudy" : "Information Technology",
+                "startDate" : "June 2013",
+                "endDate" : "May 2017"
+            }
+        ]
+    },
+    "action" : {
+        "email" : {
+            "link" : "mailto:lloydvbalce@gmail.com",
+            "text" : "Send me an email"
+        },
+        "linkedin" : {
+            "link" : "https://www.linkedin.com/in/lloydvbalce/",
+            "text" : "Visit my LinkedIn page"
+        },
+        "github" : {
+            "link" : "https://github.com/lloydvbalce/",
+            "text" : "Check out my codes at GitHub",
+        },
+        "trello" : {
+            "link" : "https://trello.com/lloydvbalce/",
+            "text" : "Find me on Trello"
+        },
+        "bitbucket" : {
+            "link" : "https://bitbucket.org/lloydvbalce/",
+            "text" : "View my Bitbucket profile"
+        }
+    },
+}
