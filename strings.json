@@ -2,9 +2,7 @@
     "intro" : {
         "name" : "Lloyd V. Balce",
         "title" : "Software Developer",
-        "summary" : "Hi! I'm a software developer living in Taguig, Philippines. I develop desktop, web, and mobile apps and is looking forward to working on open-source projects soon.
-
-        Are you looking for a developer? or do you need help in a project? I'm a fresh graduate looking for a company to have my first job (here in Metro Manila). I work on freelance projects, team or solo, and help IT students in their theses. So if you have any question or is interested in working with me, please send me an email. I'd love to hear about it."
+        "summary" : "Hi! I'm a software developer living in Taguig, Philippines. I develop desktop, web, and mobile apps and is looking forward to working on open-source projects soon.\nAre you looking for a developer? or do you need help in a project? I'm a fresh graduate looking for a company to have my first job (here in Metro Manila). I work on freelance projects, team or solo, and help IT students in their theses. So if you have any question or is interested in working with me, please send me an email. I'd love to hear about it."
     },
     "experience" : {
         "heading" : "Work Experience",
@@ -16,7 +14,7 @@
                 "startDate" : "January 2017",
                 "endDate" : "April 2017"
             }
-        ],
+        ]
     },
     "education" : {
         "heading" : "Education",
@@ -42,7 +40,7 @@
         },
         "github" : {
             "link" : "https://github.com/lloydvbalce/",
-            "text" : "Check out my codes at GitHub",
+            "text" : "Check out my codes at GitHub"
         },
         "trello" : {
             "link" : "https://trello.com/lloydvbalce/",
@@ -52,5 +50,5 @@
             "link" : "https://bitbucket.org/lloydvbalce/",
             "text" : "View my Bitbucket profile"
         }
-    },
+    }
 }
