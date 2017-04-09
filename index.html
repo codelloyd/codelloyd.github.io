@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Lloyd V. Balce" />
+    <meta name="description" content="My online resume as a GitHub page. I'm a software developer based in Taguig, Philippines. Check out my codes at https:/github.com/lloydvbalce/" />
+
+    <title>Lloyd V. Balce | Software Developer | Taguig, Philippines</title>
+
+    <link rel="icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+
+    <div class="page-pad"></div>
+
+    <div id="page" class="container-fluid">
+      <!-- HEADER -->
+      <div id="header" class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div id="avatarFrame">
+            <img id="avatar" src="images/avatar.jpg" alt="avatar"/>
+          </div>
+          <div id="heading">
+            <h1 id="profileName">{{ profile.name }}</h1>
+            <span id="profileTitle">{{ profile.title }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-pad"></div>
+
+      <!-- WELCOME MESSAGE -->
+      <div id="welcomeMessage" class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <p v-for="paragraph in profile.summary" class="summary">
+            {{ paragraph }}
+          </p>
+        </div>
+      </div>
+
+      <div class="page-pad"></div>
+
+      <div id="mainContent" class="row">
+        <!-- EXPERIENCE & EDUCATION -->
+        <div id="credentials" class="col-lg-4 col-lg-offset-2">
+          <h2>{{ experience.heading }}</h2>
+          <hr />
+          <div class="work" v-for="work in experience.list">
+            <span class="work-title">{{ work.title }}</span>
+            <span class="work-company">{{ work.company }}</span>
+            <span class="work-date col-xs-6"><i class="fa fa-calendar"></i> {{ work.startDate }} - {{ work.endDate }}</span>
+            <span class="work-location col-xs-6"><i class="fa fa-map-marker"></i> {{ work.location }}</span>
+          </div>
+
+          <h2>{{ education.heading }}</h2>
+          <hr />
+          <div class="course" v-for="course in education.list">
+            <span class="course-title">{{ course.degree }} in {{ course.fieldOfStudy }}</span>
+            <span class="course-school">{{ course.school }}</span>
+            <span class="course-date col-xs-6"><i class="fa fa-calendar"></i> {{ course.startDate }} - {{ course.endDate }}</span>
+            <span class="course-location col-xs-6"><i class="fa fa-map-marker"></i> {{ course.location }}</span>
+          </div>
+
+          <div class="page-pad"></div>
+
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div id="actions" class="col-lg-4">
+          <a :href="action.email.link" target="_blank" rel="nofollow" class="btn btn-default action-btn">
+            <i class="fa fa-2x fa-envelope "></i><span>{{ action.email.text }}</span>
+          </a>
+          <a :href="action.linkedin.link" target="_blank" rel="nofollow" class="btn btn-default action-btn">
+            <i class="fa fa-2x fa-linkedin-square"></i><span>{{ action.linkedin.text }}</span>
+          </a>
+          <a :href="action.github.link" target="_blank" rel="nofollow" class="btn btn-default action-btn">
+            <i class="fa fa-2x fa-github-square"></i><span>{{ action.github.text }}</span>
+          </a>
+          <a :href="action.trello.link" target="_blank" rel="nofollow" class="btn btn-default action-btn">
+            <i class="fa fa-2x fa-trello"></i><span>{{ action.trello.text }}</span>
+          </a>
+          <a :href="action.bitbucket.link" target="_blank" rel="nofollow" class="btn btn-default action-btn">
+            <i class="fa fa-2x fa-bitbucket-square"></i><span>{{ action.bitbucket.text }}</span>
+          </a>
+
+          <div class="page-pad"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
